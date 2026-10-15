@@ -1,0 +1,69 @@
+name: 插件投稿 / Plugin submission
+description: 想把自己的 DSH 插件收进 Super Engineer 合集？先在这里说明来意。
+title: "[插件] "
+labels: ["插件投稿", "待评审"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        先读 [CONTRIBUTING.md](https://github.com/zengpu987-ctrl/super-engineer/blob/main/CONTRIBUTING.md)
+        的「收录标准」与「许可说明」。**在许可模型确定前，代码 PR 请等作者确认后再提。**
+  - type: input
+    id: name
+    attributes:
+      label: 插件名与包名
+      placeholder: "中文名 / @local/dsh-xxx"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 它做什么
+      description: 一句话说明用途；再说清与合集里已有插件的区别。
+    validations:
+      required: true
+  - type: textarea
+    id: surface
+    attributes:
+      label: 用到了 DSH 的哪些面
+      description: 例如 sidebar.panellist 入口、main 槽整页、settings.section、Host 侧路由、systemPrompt 段落、agent/pre-step 等。
+      placeholder: "settings.section + 一个同源 Fetch 路由"
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: 自带检查脚本与结果
+      description: 仓库内离线检查脚本的路径，以及你本机跑出来的输出。
+      placeholder: "node tools/xxx-check.mjs → 42 checks passed"
+    validations:
+      required: true
+  - type: dropdown
+    id: licence
+    attributes:
+      label: 你希望自己的插件按什么许可发布
+      options:
+        - 与合集一致（由作者决定）
+        - MIT
+        - Apache-2.0
+        - 保留所有权利（仅授权使用）
+        - 其他（请在下方说明）
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: 署名方式
+      description: 合并后你希望以什么名字出现在 CONTRIBUTORS.md？
+      placeholder: "姓名 / ID / 匿名"
+    validations:
+      required: true
+  - type: checkboxes
+    id: agree
+    attributes:
+      label: 确认
+      options:
+        - label: 我同意 CODE_OF_CONDUCT.md
+          required: true
+        - label: 插件不含第三方版权内容、个人数据与构建产物
+          required: true
