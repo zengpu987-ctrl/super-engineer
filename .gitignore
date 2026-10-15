@@ -1,0 +1,10 @@
+# 打包产物与本地依赖，不进版本库 / build output and local dependencies
+dist/
+node_modules/
+*.tgz
+
+# 系统与编辑器噪音 / OS and editor noise
+.DS_Store
+*.swp
+.idea/
+.vscode/

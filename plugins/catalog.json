@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-15",
+  "note": "每个插件一个条目；path 相对仓库根目录。加插件时同时更新本文件并使用 tools/verify.mjs 校验。",
+  "plugins": []
+}
