@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "如果你在研究中使用了本合集或其插件，请按下列信息引用。 / If you use this collection or its plugins, please cite it as below."
+title: "Super Engineer: DeepSeek Harness 插件合集"
+abstract: "面向 DeepSeek Harness 的插件合集：一个仓库收录多个可独立安装的插件，并附带收录校验与打包工具。 / A collection of independently installable plugins for DeepSeek Harness, with manifest verification and packaging tooling."
+type: software
+authors:
+  - family-names: Zeng
+    given-names: Pu
+    email: zengpu987@gmail.com
+    affiliation: "Independent Researcher"
+  - name: "Anstar, Z."
+    type: other
+version: 0.1.0
+date-released: "2026-10-15"
+license: Apache-2.0
+license-url: "https://www.apache.org/licenses/LICENSE-2.0"
+repository-code: "https://github.com/zengpu987-ctrl/super-engineer"
+url: "https://github.com/zengpu987-ctrl/super-engineer"
+keywords:
+  - DeepSeek Harness
+  - plugin collection
+  - agent harness
+  - memory
+  - literature capture
+references:
+  - type: software
+    title: "Superman 套件：面向 DeepSeek Harness 的对话界面、智能记忆体与文献捕获体系"
+    authors:
+      - family-names: Zeng
+        given-names: Pu
+    url: "https://github.com/zengpu987-ctrl/dsh-superman-suite"

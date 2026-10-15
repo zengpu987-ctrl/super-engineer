@@ -1,0 +1,14 @@
+Super Engineer — DeepSeek Harness 插件合集
+Copyright © 2026 Zeng Pu（曾朴）and contributors
+
+This product includes software developed as part of the Super Engineer
+collection and distributed under the Apache License, Version 2.0
+(see LICENSE).
+
+著作权与主要贡献者（按贡献性质，不分先后）：
+  - Zeng Pu（曾朴）· zengpu987@gmail.com —— 项目发起、收录标准、维护与发布
+  - Anstar, Z. —— AI 助手，参与初版代码、文档与离线检查脚本的编写
+  - DeepSeek Harness Contributors —— 插件的运行框架（插件机制、槽位系统与文档）
+
+项目名称与标识（"Super Engineer"、"Superman"、"gen1" 及相关图标）不属于
+本许可的专利或商标授权范围；关于名称使用的约定见 COPYRIGHT.md。

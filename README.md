@@ -5,8 +5,10 @@
 > *A collection of DeepSeek Harness plugins. Clone it, install what you need.*
 
 **作者 / Author:** Zeng Pu（曾朴）· zengpu987@gmail.com · 独立研究者
-**状态 / Status:** 仓库已建立，第一批插件正在迁入 / repository created, first plugins being added
-**许可 / Licence:** 见 [COPYRIGHT.md](COPYRIGHT.md) —— 默认保留所有权利；安装与个人使用免费，**转载、二次发布、商用须先取得书面授权**。
+**合作者 / Collaborator:** Anstar, Z.（AI 助手，见 [CONTRIBUTORS.md](CONTRIBUTORS.md)）
+**状态 / Status:** 仓库已建立并公开，第一批插件正在迁入 / public, first plugins being added
+**许可 / Licence:** [**Apache-2.0**](LICENSE) —— 可自由使用、修改、再分发（含商业用途），
+需保留署名与许可声明；**项目名称与标识不随许可授予**，详见 [COPYRIGHT.md](COPYRIGHT.md)。
 
 ---
 
@@ -27,6 +29,10 @@ plugins/            每个插件一个目录，目录内就是可直接安装的
 tools/
   verify.mjs        收录前校验：清单、入口、图标、profile 层、绝对路径
   pack.mjs          打包成 .tgz（用于"直链安装"）并输出 SHA256
+LICENSE             Apache-2.0 全文
+NOTICE              归属信息（分发时需保留）
+COPYRIGHT.md        版权、许可、商标与贡献规则的说明
+CITATION.cff        引用信息（GitHub「Cite this repository」会读它）
 dist/               打包产物（不进版本库）
 ```
 
@@ -37,12 +43,23 @@ DSH 的插件安装通道接受四类规格，本合集用到其中三类：
 | 方式 | 怎么做 | 适合谁 |
 |---|---|---|
 | **本地路径**（最直接） | `git clone` 本仓库 → DSH 侧边栏 **插件 → 添加插件** → 填插件目录的**绝对路径**，例如 `/Users/你/super-engineer/plugins/superman` | 已经会 clone 的人 |
-| **tarball 直链** | 从 Releases 页面复制某个插件的 `.tgz` 直链 → 同一处填这个 URL | 只想装一个插件、不想克隆整个仓库的人 |
+| **tarball 直链** | 从 [Releases](../../releases) 复制某个插件的 `.tgz` 直链 → 同一处填这个 URL | 只想装一个插件、不想克隆整个仓库的人 |
 | **git 规格** | 若某个插件单独拆成了仓库，填 `用户名/仓库名` 即可 | 插件独立发布时 |
 
 > 本地路径**必须是绝对路径**：输入框在浏览器里，相对路径会相对 profile 解析，不是你想的那个目录。
 
 安装后重启 App（⌘Q 再打开）生效。
+
+## 参与合作
+
+这是一个**合作项目**：作者维护收录标准与发布，任何人都可以提插件、修缺陷、改文档。
+
+- [**CONTRIBUTING.md**](CONTRIBUTING.md) —— 收录标准、提交流程、PR 检查清单
+- [**CODE_OF_CONDUCT.md**](CODE_OF_CONDUCT.md) —— 行为准则
+- [**CONTRIBUTORS.md**](CONTRIBUTORS.md) —— 署名名单，以及 AI 参与程度的披露
+
+**贡献规则：Apache-2.0 入站=出站 + DCO 签到**（`git commit -s`），**无需签署 CLA**。
+你的贡献按与出站相同的许可授权给所有人，你的署名以你在 PR 中说明的方式列入 CONTRIBUTORS.md。
 
 ## 收录规范
 
@@ -72,44 +89,30 @@ node tools/pack.mjs                   # 生成 dist/*.tgz 与 dist/SHA256SUMS.tx
 }
 ```
 
-## 参与合作
+## 收费？这个模型下收不了
 
-这是一个**合作项目**：作者维护收录标准与发布，任何人都可以按流程提插件、修缺陷、改文档。
+**Apache-2.0 意味着任何人都可以合法地再分发这些代码**——包括打包上传到别的平台。所以
+"付费才能下载"在这个许可下**不可能实现**，这不是漏洞，是宽松许可的固有性质。
 
-- [**CONTRIBUTING.md**](CONTRIBUTING.md) —— 收录标准、提交流程、PR 检查清单
-- [**CODE_OF_CONDUCT.md**](CODE_OF_CONDUCT.md) —— 行为准则
-- [**CONTRIBUTORS.md**](CONTRIBUTORS.md) —— 署名名单，以及 AI 参与程度的披露
+能收费的是**服务与实物**：安装部署支持、定制开发、企业咨询、培训、纸质或镜像介质的工本费。
+如果你想"必须付费才能拿到代码"，需要换成另一套模型（保留所有权利 + CLA，或私有仓库邀请制）。
 
-> **许可模型待定（见下节）。** 在条款明确允许之前，本仓库只接受 Issue 与讨论；代码 PR 请先开
-> Issue 与作者确认——否则会出现"提交了但无法合法接收"的情况。
+**当前状态：** 代码免费开放，作者暂未提供任何收费服务。
 
-## 收费与授权（重要）
+## 引用
 
-**GitHub 没有付费下载功能**——它不能对一个仓库或一次下载收 1 元。所以"下载即付费"这件事
-必须由 GitHub 之外的环节完成。可选做法：
+```bibtex
+@software{super-engineer-2026,
+  author = {Zeng, Pu and Anstar, Z.},
+  title  = {Super Engineer: DeepSeek Harness 插件合集},
+  year   = {2026},
+  url    = {https://github.com/zengpu987-ctrl/super-engineer},
+  note   = {Apache-2.0}
+}
+```
 
-1. **赞助后给直链**（最常见）：仓库与说明公开，付款后把 Release 附件的直链或提取码发给对方。
-   门槛低、更新方便；缺点是直链一旦泄露就无法收回。
-2. **私有仓库 + 邀请**：付费后把对方加成 collaborator。可控性最好，但每来一个人要手动加一次。
-3. **平台发售**：在爱发电 / 知识星球 / 淘宝售票，GitHub 只作更新与展示。最省心，平台抽成。
-4. **免费 + 自愿赞助**：README 放收款码，代码不加限制。传播最快。
-
-这份合集做成了**四种方式都能用**的形状：无论最后选哪种，README、`tools/pack.mjs` 产出的
-tarball、[COPYRIGHT.md](COPYRIGHT.md) 的条款都不用改，只需决定"谁拿到链接"。
-
-**当前状态：** 仓库为**私有**，尚未收费，条款按 COPYRIGHT.md 执行（保留所有权利）。
-
-### 与合作项目的关系
-
-要成为**真正的合作项目**，必须选一种贡献模型——两者不能混用：
-
-| 模型 | 别人能做什么 | 贡献者的代码 | 适合 |
-|---|---|---|---|
-| **宽松许可 + DCO 签到**（Apache-2.0 / MIT） | 自由使用、修改、再分发，保留署名与许可 | 提交即按同一许可授权，无需另签协议 | 想让人用得广、愿意接受外部 PR |
-| **保留所有权利 + CLA** | 只能安装自用；修改与再发布须授权 | 需签贡献者许可协议，把权利授予作者 | 想保留控制权与收费能力 |
-
-**不能既有"保留所有权利"又接受他人代码贡献**：贡献者提交的代码若没有明确许可，别人
-（包括你）都无法合法使用，项目会变成一堆无法合并的补丁。作者正在这两者之间选择。
+机器可读格式见 [CITATION.cff](CITATION.cff)；在 GitHub 右侧「Cite this repository」可一键导出。
+[Zenodo](https://zenodo.org) 的 DOI 正在申请，取得后会补在这里。
 
 ## 相关项目
 
@@ -118,4 +121,5 @@ tarball、[COPYRIGHT.md](COPYRIGHT.md) 的条款都不用改，只需决定"谁�
 
 ## 版权
 
-Copyright © 2026 Zeng Pu（曾朴）· 保留所有权利。完整条款见 [COPYRIGHT.md](COPYRIGHT.md)。
+Copyright © 2026 Zeng Pu（曾朴）and contributors · [Apache-2.0](LICENSE)。
+完整说明见 [COPYRIGHT.md](COPYRIGHT.md)；分发时请保留 [NOTICE](NOTICE)。

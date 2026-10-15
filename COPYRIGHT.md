@@ -1,87 +1,87 @@
-# Super Engineer · 版权与授权说明
+# 版权与许可 / Copyright and licence
 
-**Copyright © 2026 Zeng Pu（曾朴）· 保留所有权利 / All rights reserved.**
+**Copyright © 2026 Zeng Pu（曾朴）and contributors**
 
 **生效日期 / Effective: 2026-10-15** ｜ 仓库 / Repository: `zengpu987-ctrl/super-engineer`
 
 ---
 
-## 一、这份文件管什么
+## 一、代码与文档：Apache License 2.0
 
-本仓库是 **DeepSeek Harness 插件合集**：`plugins/` 下的每个目录是一个可独立安装的插件，
-`tools/` 下是收录校验与打包脚本，`README.md` 与 `plugins/catalog.json` 是说明与清单。
-上述全部内容的著作权归作者 **Zeng Pu（曾朴）** 所有，受《中华人民共和国著作权法》及作者
-所在国加入的相关国际公约保护。**仓库可见不等于放弃权利，更不等于授予任何未在本说明中
-明确列出的许可。**
+本仓库的**代码、脚本与文档**按 **Apache License 2.0** 授权，全文见 [LICENSE](LICENSE)。
+这意味着**任何人都可以自由地**：
 
-## 二、无需申请即可做的事
+- 使用、复制、修改、合并、发布、分发本仓库的内容，包括用于商业目的；
+- 在自己的项目里集成这些插件，也可以再发布修改后的版本；
+- 获得贡献者**明示的专利授权**（第 3 条），不必担心贡献者事后以专利主张侵权。
 
-1. **安装与自用**：把插件安装到自己的 DeepSeek Harness 上，个人使用或本团队内部使用。
-2. **阅读与学习**：阅读源码与文档，用于自学、教学备课与课堂讲解。
-3. **评测与批评**：撰写技术分析、对比评测，包括公开指出缺陷与不足。
-4. **提交反馈**：通过 Issue 或邮件报告缺陷、提出建议、报告安全问题。
-5. **分享链接**：把仓库地址转发给同学、同事与学术群组。
+条件是（这几条是许可要求，不是额外限制）：
 
-## 三、必须事先取得书面授权的事
+1. **保留声明**：保留版权声明、许可全文，以及 [NOTICE](NOTICE) 文件中的归属信息；
+2. **标注改动**：你修改过文件，须在文件中说明你改了它（第 4(b) 条）；
+3. **不得暗示背书**：不得使用本项目的名称或标识暗示你获得了作者的认可或担保；
+4. **不授商标**：本许可**不授予**任何商标、项目名称或标识的使用权（第 6 条）。
 
-1. **转载与搬运**：把本仓库或其任何插件完整或部分地复制、镜像、二次上传到其他平台、
-   仓库、网盘、论坛、公众号、视频平台、插件市场或任何形式的合集、资源包、付费社群。
-2. **二次修改与再发布**：修改、改写、翻译、裁剪、拼接、改名、重新打包后对外发布。
-3. **改名发布**：更换项目名、插件名、界面标题、图标或作者署名后发布，无论是否声明来源。
-4. **商业使用与转售**：把本仓库或其插件用于收费产品、付费服务、商业咨询、付费课程、
-   SaaS 平台；**包括但不限于把本合集的插件单独或打包转售**。
-5. **再许可**：以任何其他许可条款（含 MIT、Apache、GPL 及其变体）重新授权给第三方。
-6. **去署名与误导**：删除、遮蔽、改写版权声明与作者署名，或暗示本仓库系他人作品、
-   暗示作者为你背书。
-7. **商标与标识**：以 "Super Engineer"、"Superman"、"gen1" 等名称与标识注册商标、注册
-   域名、申请软件著作权，或用于同类产品推广。
+本许可**不提供担保**：软件按"现状"提供，作者与贡献者不承担任何明示或默示担保责任
+（第 7、8 条）。这是宽松许可的通行做法，使用时请自行评估风险。
 
-## 四、关于收费
+## 二、项目名称与标识：保留
 
-作者**有权**对本仓库或其插件收取费用（例如象征性的 1 元），也有权随时改为免费。
-收费的具体渠道由作者另行公布：GitHub 本身不提供付费下载功能，任何"付款"都发生在
-GitHub 之外的环节（如赞助、平台发售或私有仓库邀请）。
+"Super Engineer"、"Superman"、"gen1" 及相关图标是**项目标识**，不随代码许可一并授予。
+你可以：
 
-**你无权**以任何方式转售、代售、拼团、众筹或二次分发本仓库的付费内容，也无权把
-付费后获得的内容（含 tarball 直链、提取码、私有仓库访问权）提供给第三方。
+- 说"这个插件用于 Super Engineer 合集"、"兼容 Super Engineer"这类**事实性描述**；
+- 在保留原作者署名与许可的前提下，原样分发本合集或其插件。
 
-## 五、如何申请授权
+你不可以：
 
-邮件 **zengpu987@gmail.com**，标题建议「Super Engineer 授权申请 · 用途简述」，请写明：
-申请人身份与单位、用途场景、使用形式（原样转载／修改后发布／翻译／集成／商用）、
-分发范围与是否收费、预计期限、署名与回链安排。
+- 把标识用于**商标注册、域名注册、软件著作权登记**；
+- 暗示你的分支或衍生产品是**官方版本**、或获得了作者认可；
+- **改名后冒充原创**——如果你 fork 并改名发布，请保留 [NOTICE](NOTICE) 的归属信息，
+  并说明"基于 Zeng Pu 的 Super Engineer 合集修改"。
 
-作者通常在 **七个工作日** 内答复。**授权以书面形式（含电子邮件）作出方为有效**；
-口头沟通、默认沉默、长期未回复均不构成授权。
+## 三、关于收费（重要）
 
-## 六、获授权后的义务
+选择 Apache-2.0 意味着**放弃了"付费才能下载"**：任何人都可以合法地再分发这些代码，
+包括把它放到自己的平台或打包出售。这不是漏洞，是宽松许可的固有性质。
 
-完整保留本说明与版权声明；显著标明项目名称、作者与仓库地址；仅按授权书载明的用途、
-范围与期限使用；不得转授权；修改后发布的版本须标注「基于 Zeng Pu 的 Super Engineer
-合集修改」并说明改动内容与日期。
+因此本项目的收费只可能来自**服务与实物**，而不是代码访问权：
 
-## 七、依赖与第三方内容
+- 可收费：安装与部署支持、定制开发、企业咨询、培训、纸质或镜像介质的工本费；
+- 不可通过许可限制：代码的使用、修改与再分发——你不能用许可去禁止别人这样做。
 
-本合集内的插件可能引用 DeepSeek Harness 及其官方包、以及第三方开源组件。这些内容
-**各自适用其原始许可**，不在本说明的授权范围内，也不因本说明而改变。使用者应自行确认
-并遵守其条款。语料、示例数据与文档中的个人信息一律以化名出现，使用者不得尝试还原。
+如果你希望"必须付费才能拿到代码"，那需要**另一套许可模型**（保留所有权利 + CLA，
+或私有仓库邀请制）。本项目**当前不采用**该模型，条款以本文件为准。
 
-## 八、免责声明
+**当前状态：** 代码免费开放；作者暂未提供任何收费服务。
 
-本仓库按「现状」提供，作者不对其适用性、正确性、无缺陷性或特定用途适合性作出任何
-明示或默示担保。安装、运行、修改与分发本仓库所产生的一切风险与后果由使用者自行承担；
-作者不对数据丢失、设备损坏、学业或商业损失、第三方索赔承担责任。
+## 四、贡献：DCO 签到，无需 CLA
 
-## 九、侵权处理
+向本仓库提交贡献，表示你同意：
 
-对未经授权实施的转载、修改发布、转售、去署名或再许可行为，作者保留下列权利：要求
-立即停止侵权并公开更正；要求删除下架已分发的副本与衍生版本；要求赔偿损失（含取证与
-律师费用）；向平台投诉；依法向有管辖权的法院提起诉讼。
+1. 你的贡献按 **Apache-2.0**（与出站许可相同）授权给所有人——**入站=出站**，无需另签协议；
+2. 你在每个提交上**签到 Developer Certificate of Origin**（`git commit -s`），声明你有权提交
+   这份代码、且它不侵犯他人权利；
+3. 你的署名会按你在 PR 中说明的方式列入 [CONTRIBUTORS.md](CONTRIBUTORS.md)。
 
-## 十、附则
+流程与收录标准见 [CONTRIBUTING.md](CONTRIBUTING.md)。未签到的提交会被要求补签。
 
-本说明的解释权归作者；条款冲突时以对作者权利保护更有利的表述为准；作者可修订本说明，
-修订自发布之日起生效；本说明未明确授予的权利均由作者保留。
+## 五、第三方内容
+
+合集中的插件可能引用 DeepSeek Harness 及其官方包、以及其他开源组件，**它们各自适用其原始
+许可**，不因本文件而改变。使用者应自行确认并遵守。示例数据中的个人信息一律以化名出现，
+使用时不得尝试还原。
+
+## 六、AI 参与的披露
+
+本项目在开发过程中使用了 AI 助手（DeepSeek Harness 会话）参与代码、文档与离线检查脚本的
+撰写，署名见 [CONTRIBUTORS.md](CONTRIBUTORS.md) 与 [CITATION.cff](CITATION.cff)。按学术规范，
+这一参与程度应当被披露，不应隐匿。
+
+## 七、修订
+
+作者可修订本文件；修订自发布之日起生效。若与 [LICENSE](LICENSE) 的强制条款冲突，以
+Apache-2.0 原文为准——**许可一旦授予，不可对已获得的副本追溯撤回**。
 
 **联系 / Contact:** Zeng Pu（曾朴）· zengpu987@gmail.com · 独立研究者
 
@@ -89,20 +89,26 @@ GitHub 之外的环节（如赞助、平台发售或私有仓库邀请）。
 
 ## English summary
 
-Copyright © 2026 Zeng Pu. All rights reserved.
+The **code and documentation** of this repository are licensed under the
+**Apache License 2.0** (see [LICENSE](LICENSE)): anyone may use, modify, distribute
+and commercially exploit them, provided the copyright notices, the licence text and
+the [NOTICE](NOTICE) attribution are kept, modified files are marked as modified,
+and no endorsement is implied. The licence includes an express patent grant and
+comes **without warranty**.
 
-Installing for personal or internal use, reading, studying, reviewing and opening
-issues are welcome and need no permission. **Re-hosting, republishing, modifying
-and redistributing, renaming, bundling into other collections, commercial use,
-reselling and relicensing are prohibited without prior written permission.**
+**Trademarks and project names** ("Super Engineer", "Superman", "gen1" and the
+marks) are **not** licensed: no registration, no implied official status, and no
+renaming to pass a fork off as original work.
 
-The author may charge a fee (for example a nominal ¥1) for access; GitHub offers no
-paid downloads, so payment always happens outside GitHub, and buyers may not
-resell, group-buy or redistribute what they received (including tarball links,
-codes, or private-repository access).
+**Charging for the code is not possible** under this licence — anyone may legally
+redistribute it. Revenue can only come from services and physical goods
+(support, customisation, consulting, training, media). A pay-to-download model
+would require a different licence (all rights reserved plus a CLA, or an
+invitation-only private repository); this project does not use one.
 
-To ask, email zengpu987@gmail.com with your identity, intended use, scope and
-timeframe. A written reply — email included — is the only permission; silence is
-not consent. Third-party dependencies keep their own licences. Provided as is,
-without warranty. The author reserves the right to demand a stop and public
-correction, takedowns, compensation and legal action.
+**Contributions** are accepted under the Apache-2.0 inbound=outbound rule with a
+**Developer Certificate of Origin** sign-off (`git commit -s`) — no CLA is needed.
+
+AI assistance (a DeepSeek Harness session) contributed code and documentation and
+is credited in [CONTRIBUTORS.md](CONTRIBUTORS.md); this disclosure is part of the
+project's academic record.

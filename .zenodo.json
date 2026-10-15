@@ -1,0 +1,39 @@
+{
+  "title": "Super Engineer: DeepSeek Harness 插件合集",
+  "description": "<p>面向 DeepSeek Harness 的插件合集：一个仓库收录多个可独立安装的插件，并附带收录校验（<code>tools/verify.mjs</code>）与打包工具（<code>tools/pack.mjs</code>）。每个插件遵循 DeepSeek Harness 的插件规范——不改动框架源码，只通过槽位系统与同源 Fetch 通道接入。</p><p>A collection of independently installable plugins for DeepSeek Harness, with manifest verification and packaging tooling. Plugins follow the harness plugin contract: no framework forking, only slots and a same-origin fetch channel.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "publication_date": "2026-10-15",
+  "creators": [
+    {
+      "name": "Zeng, Pu",
+      "affiliation": "Independent Researcher"
+    },
+    {
+      "name": "Anstar, Z.",
+      "affiliation": "AI assistant"
+    }
+  ],
+  "keywords": [
+    "DeepSeek Harness",
+    "plugin collection",
+    "agent harness",
+    "memory",
+    "literature capture"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/zengpu987-ctrl/dsh-superman-suite",
+      "relation": "isPartOf",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/zengpu987-ctrl/super-engineer",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "本合集在开发过程中使用了 AI 助手（DeepSeek Harness 会话）参与代码与文档编写，署名见 creators。 / AI assistance (a DeepSeek Harness session) contributed code and documentation; credited above."
+}
